@@ -71,9 +71,7 @@ p {
     text-decoration: none;
     color: #fff; }
     .header-menu li a:hover {
-      color: skyblue;
-      font-size: 1.2em;
-      font-weight: bold; }
+      color: orange; }
 
 /*---------header-----------*/
 .header-wrapper {
