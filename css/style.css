@@ -127,7 +127,7 @@ p {
     right: 0;
     left: 0; }
 
-/*---------appeal-point-----------*/
+/*---------メリット-----------*/
 .appeal-box {
   display: flex;
   justify-content: center;
@@ -194,23 +194,23 @@ p {
       font-size: 18px;
       text-align: left; }
 
-.ideal-env {
+.ideal {
   margin-top: 90px;
   background-image: url("../image/test-bg6.png");
   height: 600px;
   background-size: cover;
   position: relative;
   text-align: left; }
-  .ideal-env_box {
+  .ideal_box {
     position: absolute;
     top: 40px;
     left: 80px; }
-    .ideal-env_box_subtitle {
+    .ideal_box_subtitle {
       font-size: 24px;
       margin-bottom: 40px; }
-    .ideal-env_box_ul {
+    .ideal_box_ul {
       padding: 5px; }
-      .ideal-env_box_ul li {
+      .ideal_box_ul li {
         font-size: 20px;
         padding: 5px; }
 
@@ -243,7 +243,7 @@ p {
       width: 300px;
       height: 200px; }
 
-/*---------equipments-----------*/
+/*---------設備-----------*/
 .equipments-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
@@ -254,7 +254,7 @@ p {
   .equipments-wrapper_box_title {
     font-size: 18px; }
 
-/*---------contact-----------*/
+/*---------お問い合わせ-----------*/
 .contact_btn {
   font-size: 18px;
   display: inline-block;
@@ -282,6 +282,12 @@ p {
     .footer_container_copyright {
       color: #fff; }
 
-/*---------base-list-----------*/
+#gaogao,
+#merit,
+#base-list,
+#equipments,
+#contact {
+  margin-top: -80px;
+  padding-top: 80px; }
 
 /*# sourceMappingURL=style.css.map */

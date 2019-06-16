@@ -155,7 +155,7 @@ p {
     }
   }
 
-/*---------appeal-point-----------*/
+/*---------メリット-----------*/
 
 .appeal-box {
   display: flex;
@@ -242,7 +242,7 @@ p {
 }
 
 // 理想的な開発環境
-.ideal-env {
+.ideal {
   margin-top: 90px;
   background-image: url("../image/test-bg6.png");
   height: 600px;
@@ -302,7 +302,7 @@ p {
   }
 }
 
-/*---------equipments-----------*/
+/*---------設備-----------*/
 .equipments-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -319,7 +319,7 @@ p {
 }
 
 
-/*---------contact-----------*/
+/*---------お問い合わせ-----------*/
 .contact_btn {
     font-size: 18px;
     display: inline-block;
@@ -353,4 +353,11 @@ p {
     }
 }
 
-/*---------base-list-----------*/
+#gaogao,
+#merit,
+#base-list,
+#equipments,
+#contact {
+  margin-top: -80px;
+  padding-top: 80px; 
+}
