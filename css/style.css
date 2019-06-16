@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*---------common-----------*/
 p {
   color: #515656;
@@ -7,8 +8,8 @@ p {
   color: #515656;
   font-size: 32px;
   font-weight: 600;
-  margin-top: 48px;
-  margin-bottom: 36px; }
+  margin-top: 90px;
+  margin-bottom: 60px; }
 
 .h3-title {
   color: #5f5f5f;
@@ -37,7 +38,8 @@ p {
 .gaogao-img {
   border-radius: 2px;
   height: 250px;
-  width: auto; }
+  width: auto;
+  object-fit: contain; }
 
 .gaogao-img2 {
   width: 320px;
@@ -96,17 +98,17 @@ p {
 /*---------header-----------*/
 .header-wrapper {
   position: relative;
-  height: 600px;
+  min-height: 800px;
+  max-height: 1050px;
   z-index: 0;
   top: 0;
-  background-image: url("../image/bgimage.jpg");
-  background-size: cover;
-  background-color: orange; }
+  background-image: url("../image/map/map8.jpg");
+  background-size: cover; }
   @media (max-width: 667px) {
     .header-wrapper {
       height: 360px; } }
   .header-wrapper .h1-title {
-    font-size: 48px;
+    font-size: 62px;
     color: #fff;
     position: absolute;
     top: 240px;
@@ -117,33 +119,13 @@ p {
       .header-wrapper .h1-title_sub::before {
         content: "\a";
         white-space: pre; }
-
-/*---------base-list-----------*/
-.base-wrapper {
-  margin-top: 40px; }
-  .base-wrapper .base-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px auto; }
-    .base-wrapper .base-container .district-wrapper {
-      width: 300px;
-      height: 250px;
-      margin: auto 0;
-      padding: 0 20px; }
-      .base-wrapper .base-container .district-wrapper_country {
-        font-size: 20px;
-        margin: 10px auto; }
-      .base-wrapper .base-container .district-wrapper_desc {
-        font-size: 16px;
-        text-align: left;
-        margin: 10px auto; }
-      .base-wrapper .base-container .district-wrapper_url {
-        font: bold;
-        color: red;
-        margin: 10px auto; }
-    .base-wrapper .base-container .image-wrapper {
-      width: 300px;
-      height: 250px; }
+  .header-wrapper .top-subtitle {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 390px;
+    right: 0;
+    left: 0; }
 
 /*---------appeal-point-----------*/
 .appeal-box {
@@ -212,13 +194,64 @@ p {
       font-size: 18px;
       text-align: left; }
 
+.ideal-env {
+  margin-top: 90px;
+  background-image: url("../image/test-bg6.png");
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  text-align: left; }
+  .ideal-env_box {
+    position: absolute;
+    top: 40px;
+    left: 80px; }
+    .ideal-env_box_subtitle {
+      font-size: 24px;
+      margin-bottom: 40px; }
+    .ideal-env_box_ul {
+      padding: 5px; }
+      .ideal-env_box_ul li {
+        font-size: 20px;
+        padding: 5px; }
+
+.c-white {
+  color: #FFF; }
+
+/*---------拠点一覧-----------*/
+.base-wrapper {
+  margin-top: 40px; }
+  .base-wrapper .base-container {
+    padding: 20px auto;
+    text-align: -webkit-center; }
+    .base-wrapper .base-container .district-wrapper {
+      width: 300px;
+      height: 225px;
+      margin: auto 0;
+      padding: 0 20px; }
+      .base-wrapper .base-container .district-wrapper_country {
+        font-size: 20px;
+        margin: 10px auto; }
+      .base-wrapper .base-container .district-wrapper_desc {
+        font-size: 16px;
+        text-align: left;
+        margin: 10px auto; }
+      .base-wrapper .base-container .district-wrapper_url {
+        font: bold;
+        color: red;
+        margin: 10px auto; }
+    .base-wrapper .base-container .image-wrapper {
+      width: 300px;
+      height: 200px; }
+
 /*---------equipments-----------*/
 .equipments-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
-  .equipments-wrapper_img {
-    width: 150px; }
-  .equipments-wrapper_title {
+  .equipments-wrapper_box_img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; }
+  .equipments-wrapper_box_title {
     font-size: 18px; }
 
 /*---------contact-----------*/
