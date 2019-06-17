@@ -1,50 +1,43 @@
 @charset "UTF-8";
 /*---------common-----------*/
+html, html a, body {
+  font-family: Arial, Helvetica, sans-serif; }
+
 p {
   color: #515656;
-  line-height: 26px; }
+  line-height: 26px;
+  margin: 0; }
+
+ul {
+  list-style: none; }
 
 .h2-title {
   color: #515656;
+  text-align: center;
   font-size: 32px;
   font-weight: 600;
   margin-top: 90px;
   margin-bottom: 60px; }
+  @media (max-width: 667px) {
+    .h2-title {
+      font-size: 26px;
+      margin-top: 60px;
+      margin-bottom: 40px; } }
 
 .h3-title {
+  text-align: center;
   color: #5f5f5f;
   font-size: 24px;
   font-weight: 600;
   padding: 24px 10px; }
-
-.desc {
-  font-size: 18px;
-  margin: 10px auto; }
+  @media (max-width: 667px) {
+    .h3-title {
+      font-size: 18px; } }
 
 .bold {
   font-weight: bold; }
 
 /* -------header-nav------------- */
-.gaogao-desc {
-  margin: auto 0; }
-  .gaogao-desc p {
-    text-align: left; }
-
-.gaogao-desc2 {
-  margin: auto 0; }
-  .gaogao-desc2 p {
-    text-align: left; }
-
-.gaogao-img {
-  border-radius: 2px;
-  height: 250px;
-  width: auto;
-  object-fit: contain; }
-
-.gaogao-img2 {
-  width: 320px;
-  height: auto; }
-
 .header-nav {
   position: fixed;
   z-index: 10;
@@ -67,11 +60,9 @@ p {
       padding-top: 0; } }
 
 .header-logo {
-  float: left;
   margin: auto; }
   @media (max-width: 667px) {
     .header-logo {
-      float: none;
       padding: 15px 0 0 20px; } }
 
 .header-nav-title {
@@ -106,118 +97,124 @@ p {
   background-size: cover; }
   @media (max-width: 667px) {
     .header-wrapper {
-      height: 360px; } }
+      min-height: 667px;
+      width: 100%;
+      background-image: url("../image/map/map12.png");
+      background-size: cover; } }
+  .header-wrapper_box {
+    position: absolute;
+    color: #FFF;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 880px; }
   .header-wrapper .h1-title {
     font-size: 62px;
     color: #fff;
-    position: absolute;
-    top: 240px;
-    right: 0;
-    left: 0; }
-    .header-wrapper .h1-title_sub {
-      font-size: 22px; }
-      .header-wrapper .h1-title_sub::before {
-        content: "\a";
-        white-space: pre; }
-  .header-wrapper .top-subtitle {
-    font-size: 20px;
-    color: #fff;
-    position: absolute;
-    top: 390px;
-    right: 0;
-    left: 0; }
+    margin-bottom: 38px; }
+    @media (max-width: 667px) {
+      .header-wrapper .h1-title {
+        font-size: 38px;
+        margin-bottom: 20px; } }
+  .header-wrapper .top-subtitle1 {
+    font-size: 34px;
+    color: #FFF;
+    margin-bottom: 22px; }
+    @media (max-width: 667px) {
+      .header-wrapper .top-subtitle1 {
+        font-size: 21px;
+        margin-bottom: 4px; } }
+  .header-wrapper .top-subtitle2 {
+    font-size: 34px;
+    color: #FFF; }
+    @media (max-width: 667px) {
+      .header-wrapper .top-subtitle2 {
+        font-size: 21px; } }
+
+/*---------GAOGAOハウスとは？-----------*/
+.gaogao-box {
+  margin: 0 auto;
+  text-align: -webkit-center;
+  width: 80%; }
+  @media (max-width: 667px) {
+    .gaogao-box {
+      width: auto; } }
+
+@media (max-width: 667px) {
+  .gaogao-desc {
+    text-align: left; } }
 
 /*---------メリット-----------*/
-.appeal-box {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto; }
+.merit-desc {
+  margin: auto 0; }
+  .merit-desc p {
+    text-align: left; }
+
+.merit-img {
+  border-radius: 2px;
+  height: 250px;
+  width: auto;
+  object-fit: contain; }
   @media (max-width: 667px) {
-    .appeal-box {
-      flex-direction: column; } }
-  .appeal-box img {
-    margin-bottom: 15px; }
-  .appeal-box_text {
-    margin: auto 0;
-    padding: 0 30px; }
-    @media (max-width: 667px) {
-      .appeal-box_text {
-        padding: 0 10px; } }
-    .appeal-box_text p {
-      text-align: left; }
-
-.appeal-box2 {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  flex-direction: row-reverse; }
-  @media (max-width: 667px) {
-    .appeal-box2 {
-      flex-direction: column; } }
-  .appeal-box2 img {
-    margin-bottom: 15px; }
-  .appeal-box2_text {
-    margin: auto 0;
-    padding: 0 30px; }
-    @media (max-width: 667px) {
-      .appeal-box2_text {
-        padding: 0 10px; } }
-    .appeal-box2_text p {
-      text-align: left; }
-
-.appeal-wrapper1 {
-  display: flex;
-  justify-content: space-around; }
-  .appeal-wrapper1_box {
-    height: 300px;
-    width: 300px; }
-    .appeal-wrapper1_box_img {
-      width: 250px; }
-    .appeal-wrapper1_box_title {
-      font-size: 18px; }
-    .appeal-wrapper1_box_desc {
-      font-size: 16px;
-      text-align: left; }
-
-.sub-desc {
-  margin-bottom: 40px; }
-
-.appeal-wrapper2 {
-  margin: 20px auto;
-  width: 1100px;
-  display: flex;
-  justify-content: left; }
-  .appeal-wrapper2_box {
-    padding-top: 20px; }
-    .appeal-wrapper2_box_desc {
-      margin-left: 20px;
-      font-size: 18px;
-      text-align: left; }
+    .merit-img {
+      padding: 0;
+      height: 275px; } }
 
 .ideal {
   margin-top: 90px;
-  background-image: url("../image/test-bg6.png");
+  background-image: url("../image/member/asakatsu2.png");
   height: 600px;
   background-size: cover;
   position: relative;
   text-align: left; }
+  @media (max-width: 667px) {
+    .ideal {
+      height: 400px; } }
   .ideal_box {
     position: absolute;
     top: 40px;
-    left: 80px; }
+    left: 80px;
+    text-align: -webkit-left; }
+    @media (max-width: 667px) {
+      .ideal_box {
+        text-align: -webkit-center;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px; } }
     .ideal_box_subtitle {
       font-size: 24px;
       margin-bottom: 40px; }
+      @media (max-width: 667px) {
+        .ideal_box_subtitle {
+          font-size: 20px; } }
     .ideal_box_ul {
       padding: 5px; }
+      @media (max-width: 667px) {
+        .ideal_box_ul {
+          text-align: left; } }
       .ideal_box_ul li {
         font-size: 20px;
         padding: 5px; }
+        @media (max-width: 667px) {
+          .ideal_box_ul li {
+            font-size: 16px; } }
 
 .c-white {
   color: #FFF; }
 
 /*---------拠点一覧-----------*/
+.base-desc-box {
+  text-align: center;
+  padding-bottom: 20px; }
+  @media (max-width: 667px) {
+    .base-desc-box {
+      text-align: left; } }
+
 .base-wrapper {
   margin-top: 40px; }
   .base-wrapper .base-container {
@@ -247,19 +244,32 @@ p {
 .equipments-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
-  .equipments-wrapper_box_img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain; }
-  .equipments-wrapper_box_title {
-    font-size: 18px; }
+  @media (max-width: 667px) {
+    .equipments-wrapper {
+      grid-template-columns: 1fr 1fr; } }
+  .equipments-wrapper_box {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    .equipments-wrapper_box_img {
+      max-width: 100px;
+      height: 100px;
+      object-fit: contain; }
+    .equipments-wrapper_box_title {
+      font-size: 18px; }
+      @media (max-width: 667px) {
+        .equipments-wrapper_box_title {
+          font-size: 16px; } }
 
 /*---------お問い合わせ---------*/
+#contact {
+  text-align: center; }
+
 .contact_btn {
   font-size: 18px;
   display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  text-align: center;
+  margin-top: 40px;
   padding: 7px 20px;
   border-radius: 25px;
   text-decoration: none;
@@ -267,13 +277,18 @@ p {
   background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
   background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
   transition: .4s; }
+  @media (max-width: 667px) {
+    .contact_btn {
+      margin-top: 20px; } }
 
 /*---------Footer-----------*/
 .footer {
   background-color: #2c2c2c;
+  text-align: center;
   height: 160px;
   position: relative;
-  margin: auto 0; }
+  margin: auto 0;
+  margin-top: 60px; }
   .footer_container {
     position: absolute;
     top: 40px;
