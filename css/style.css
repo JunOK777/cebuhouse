@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*----------------------------------------------------------------------
+
+	MASTER STYLESHEET
+
+-----------------------------------------------------------------------*/
 /*---------common-----------*/
 html, html a, body {
   font-family: 'Poppins', sans-serif; }
@@ -37,72 +42,28 @@ ul {
 .bold {
   font-weight: bold; }
 
-/* -------header-nav------------- */
-.header-nav {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  background-color: rgba(95, 95, 95, 0.7); }
-
-.nav-wrapper {
-  width: 1100px;
-  height: 80px;
-  position: relative;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 9fr; }
-  @media (max-width: 667px) {
-    .nav-wrapper {
-      width: 100%;
-      height: 60px;
-      display: block;
-      grid-template-columns: none;
-      padding-top: 0; } }
-
-.header-logo {
-  margin: auto; }
-  @media (max-width: 667px) {
-    .header-logo {
-      padding: 15px 0 0 20px; } }
-
-.header-nav-title {
-  font-size: 22px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #fff; }
-
-.header-menu-box {
-  margin: auto 0; }
-  @media (max-width: 667px) {
-    .header-menu-box {
-      display: none; } }
-
-.header-menu {
-  display: flex;
-  justify-content: space-around; }
-  .header-menu li a {
-    text-decoration: none;
-    color: #fff; }
-    .header-menu li a:hover {
-      color: orange; }
+#gaogao,
+#merit,
+#base-list,
+#equipments,
+#contact {
+  margin-top: -80px;
+  padding-top: 80px; }
 
 /*---------ハンバーガーメニュー-----------*/
 .global-nav {
   display: block;
   position: fixed;
   right: -320px;
-  /* これで隠れる */
   top: 0;
   width: 300px;
-  /* スマホに収まるくらい */
   height: 100vh;
   padding-top: 40px;
   background-color: gray;
   opacity: 0.8;
   transition: all .6s;
   z-index: 200;
-  overflow-y: auto;
-  /* メニューが多くなったらスクロールできるように */ }
+  overflow-y: auto; }
 
 .global-nav__list {
   margin: 0;
@@ -133,9 +94,7 @@ ul {
       right: 20px;
       top: 10px;
       width: 40px;
-      /* クリックしやすいようにちゃんと幅を指定する */
       height: 40px;
-      /* クリックしやすいようにちゃんと高さを指定する */
       cursor: pointer;
       z-index: 300; } }
 
@@ -193,6 +152,55 @@ ul {
   transform: rotate(-45deg);
   top: 20px; }
 
+/* -------header-nav------------- */
+.header-nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(95, 95, 95, 0.7); }
+
+.nav-wrapper {
+  width: 1100px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 9fr; }
+  @media (max-width: 667px) {
+    .nav-wrapper {
+      width: 100%;
+      height: 60px;
+      display: block;
+      grid-template-columns: none;
+      padding-top: 0; } }
+
+.header-logo {
+  margin: auto; }
+  @media (max-width: 667px) {
+    .header-logo {
+      padding: 15px 0 0 20px; } }
+
+.header-nav-title {
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff; }
+
+.header-menu-box {
+  margin: auto 0; }
+  @media (max-width: 667px) {
+    .header-menu-box {
+      display: none; } }
+
+.header-menu {
+  display: flex;
+  justify-content: space-around; }
+  .header-menu li a {
+    text-decoration: none;
+    color: #fff; }
+    .header-menu li a:hover {
+      color: orange; }
+
 /*---------header-----------*/
 .header-wrapper {
   position: relative;
@@ -241,6 +249,22 @@ ul {
     @media (max-width: 667px) {
       .header-wrapper .top-subtitle2 {
         font-size: 21px; } }
+
+/*---------Footer-----------*/
+.footer {
+  background-color: #2c2c2c;
+  text-align: center;
+  height: 160px;
+  position: relative;
+  margin: auto 0;
+  margin-top: 60px; }
+  .footer_container {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0; }
+    .footer_container_copyright {
+      color: #fff; }
 
 /*---------GAOGAOハウスとは？-----------*/
 .gaogao-box {
@@ -293,6 +317,11 @@ ul {
         left: 0;
         right: 0;
         padding: 0 15px; } }
+    .ideal_box_left {
+      text-align: left; }
+      @media (max-width: 667px) {
+        .ideal_box_left {
+          text-align: center; } }
     .ideal_box_subtitle {
       font-size: 24px;
       margin-bottom: 40px; }
@@ -387,29 +416,5 @@ ul {
   @media (max-width: 667px) {
     .contact_btn {
       margin-top: 20px; } }
-
-/*---------Footer-----------*/
-.footer {
-  background-color: #2c2c2c;
-  text-align: center;
-  height: 160px;
-  position: relative;
-  margin: auto 0;
-  margin-top: 60px; }
-  .footer_container {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    right: 0; }
-    .footer_container_copyright {
-      color: #fff; }
-
-#gaogao,
-#merit,
-#base-list,
-#equipments,
-#contact {
-  margin-top: -80px;
-  padding-top: 80px; }
 
 /*# sourceMappingURL=style.css.map */

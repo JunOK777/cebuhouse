@@ -1,0 +1,56 @@
+/*---------common-----------*/
+
+$sp: 667px;
+@mixin sp {
+    @media (max-width: ($sp)) {
+      @content;
+    }
+  }
+  
+  html, html a, body {
+    font-family: 'Poppins', sans-serif;
+  }
+  p {
+      color: rgb(81, 86, 86);
+      line-height: 26px;
+      margin: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  .h2-title {
+      color: rgb(81, 86, 86);
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 90px;
+      margin-bottom: 60px;
+      @include sp {
+        font-size: 26px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+      }
+  }
+  .h3-title {
+      text-align: center;
+      color: #5f5f5f;
+      font-size: 24px;
+      font-weight: 600;
+      padding:24px 10px;
+      @include sp {
+        font-size: 18px;
+      }
+  }
+  .bold {
+      font-weight: bold;
+  }
+
+// ナビゲーションからのリンク先の位置w調整
+#gaogao,
+#merit,
+#base-list,
+#equipments,
+#contact {
+  margin-top: -80px;
+  padding-top: 80px; 
+}
