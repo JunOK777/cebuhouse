@@ -1,6 +1,9 @@
 /*---------お問い合わせ---------*/
 #contact {
     text-align: center;
+    @include sp {
+      display: none;
+    }
   }
   .contact_btn {
       font-size: 18px;
