@@ -1,0 +1,53 @@
+ /*---------header-----------*/
+ .header-wrapper {
+    position: relative;
+    min-height: 800px;
+    max-height: 1050px;
+    z-index: 0;
+    top: 0;
+    background-image: url("../image/map/map8.jpg");
+    background-size: cover;
+    @include sp {
+      min-height: 667px; 
+      width:100%;
+      background-image: url("../image/map/map12.png");
+      background-size: cover;
+    }
+    &_box {
+      position: absolute;
+      color: #FFF;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      text-align: center;
+      padding: 0 15px;
+      width: 100%;
+      max-width: 880px;
+    }
+    .h1-title {
+        font-size: 62px;
+        color: #fff;
+        margin-bottom: 38px;
+        @include sp {
+          font-size: 38px;
+          margin-bottom: 20px;
+        }
+    }
+    .top-subtitle1 {
+      font-size: 34px;
+      color: #FFF;
+      margin-bottom: 22px;
+      @include sp {
+        font-size: 21px;
+        margin-bottom: 4px;
+      }
+    }
+    .top-subtitle2 {
+      font-size: 34px;
+      color: #FFF;
+      @include sp {
+        font-size: 21px;
+      }
+    }
+  }

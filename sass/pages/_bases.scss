@@ -1,0 +1,39 @@
+/*---------拠点一覧-----------*/
+.base-desc-box {
+    text-align: center;
+    padding-bottom: 20px;
+    @include sp {
+     text-align: left; 
+    }
+  }
+  .base-wrapper {
+    margin-top: 40px;
+    .base-container {
+        padding: 20px auto;
+        text-align: -webkit-center;
+        .district-wrapper {
+            width: 300px;
+            height: 225px;
+            margin: auto 0;
+            padding: 0 20px;
+            &_country {
+                font-size: 20px;
+                margin: 10px auto;
+            }
+            &_desc {
+                font-size: 16px;
+                text-align: left;
+                margin: 10px auto;
+            }
+            &_url {
+                font: bold;
+                color: red;
+                margin: 10px auto;
+            }
+        }
+        .image-wrapper {
+            width: 300px;
+            height: 200px;
+        }
+    }
+  }

@@ -1,0 +1,14 @@
+  /*---------GAOGAOハウスとは？-----------*/
+  .gaogao-box {
+    margin: 0 auto;
+    text-align: -webkit-center;
+    width: 80%;
+    @include sp {
+      width: auto;
+    }
+  }
+  .gaogao-desc {
+    @include sp {
+      text-align: left;
+    }
+  }

@@ -1,0 +1,54 @@
+// 理想的な開発環境
+.ideal {
+    margin-top: 90px;
+    background-image: url("../image/member/asakatsu2.png");
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+    @include sp {
+      height: 400px;
+    }
+    &_box {
+      position: absolute;
+      top: 40px;
+      left: 80px;
+      text-align: -webkit-left;
+      @include sp {
+        text-align: -webkit-center;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px;
+      }
+      &_left {
+        text-align: left;
+        @include sp {
+          text-align: center;
+        }
+      }
+      &_subtitle {
+        font-size: 24px;
+        margin-bottom: 40px;
+        @include sp {
+          font-size: 20px;
+        }
+      }
+      &_ul {
+        padding: 5px;
+        @include sp {
+          text-align: left;
+        }
+        li {
+          font-size: 20px;
+          padding: 5px;
+          @include sp {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .c-white {
+    color: #FFF; 
+  }
