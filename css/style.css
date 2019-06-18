@@ -305,6 +305,10 @@ ul {
   .gaogao-desc {
     text-align: left; } }
 
+@media (max-width: 667px) {
+  .mobile-disappearing {
+    display: none; } }
+
 /*---------メリット-----------*/
 .merit-desc {
   margin: auto 0; }
