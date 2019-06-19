@@ -12,3 +12,8 @@
       text-align: left;
     }
   }
+  .mobile-disappearing {
+    @include sp {
+      display: none;
+    }
+  }
